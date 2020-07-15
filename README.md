@@ -34,7 +34,7 @@
 
   To finish, `fs.writeFile` is used to generate the README.md file.
 
-
+![use demo](demo.png)
   
   ## License
   
