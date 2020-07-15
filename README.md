@@ -36,6 +36,10 @@
 
 ![use demo](demo.gif)
   
+  # Contributing
+
+  N/A
+  
   ## License
   
   MIT License
