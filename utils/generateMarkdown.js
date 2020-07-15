@@ -20,14 +20,12 @@ function generateMarkdown(userResponses, userInfo) {
   let draftMarkdown = 
   `# ${userResponses.title}
 
-  ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor)
-  
-  Check out the badges hosted by [shields.io](https://shields.io/).
+  ![GitHub Badge](https://img.shields.io/github/languages/top/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor)
   
   
   ## Description 
   
-  *The what, why, and how:* 
+  *A short description of your app* 
   
   ${userResponses.description}
 
@@ -49,7 +47,7 @@ function generateMarkdown(userResponses, userInfo) {
   
   ## Installation
   
-  *Steps required to install project and how to get the development environment running:*
+  *How to install and run the application*
   
   ${userResponses.installation}`
   };
@@ -64,7 +62,7 @@ function generateMarkdown(userResponses, userInfo) {
   
   ## Usage 
   
-  *Instructions and examples for use:*
+  *How the application is used:*
   
   ${userResponses.usage}`
   };
@@ -76,13 +74,13 @@ function generateMarkdown(userResponses, userInfo) {
   
   ## Contributing
   
-  *If you would like to contribute it, you can follow these guidelines for how to do so.*
+  *Ways to contribute:*
   
   ${userResponses.contributing}`
   };
   
 
-  // Optional Tests section
+  // tests section (optional)
   if (userResponses.tests !== '') {
   
   draftMarkdown +=
